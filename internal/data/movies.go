@@ -22,7 +22,7 @@ type Movie struct {
 	Version   int32     `json:"version"`
 }
 
-func ValidateMovie (v *validator.Validator, movie *Movie) {
+func ValidateMovie(v *validator.Validator, movie *Movie) {
 	v.Check(movie.Title != "", "title", "must be provided")
 	v.Check(len(movie.Title) < 500, "title", "must not be more than 500 bytes long")
 
