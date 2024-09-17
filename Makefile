@@ -30,6 +30,17 @@ build/api:
 	GOOS=linux GOARCH=amd64 go build -ldflags=${linker_flags} -o=./bin/linux_amd64/api ./cmd/api
 
 # ===============================================
+# PRODUCTION
+# ===============================================
+
+production_host_id = '137.184.221.77'
+
+## production/connect: connect to the production server
+.PHONY: production/connect
+production/connect:
+	ssh greenlight@${production_host_id}
+
+# ===============================================
 # DEVELOPMENT
 # ===============================================
 
