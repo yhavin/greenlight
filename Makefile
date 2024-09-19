@@ -33,7 +33,7 @@ build/api:
 # PRODUCTION
 # ===============================================
 
-production_host_ip = '137.184.221.77'
+production_host_ip = 'XXX.XXX.XXX.XXX'
 
 ## production/connect: connect to the production server
 .PHONY: production/connect
